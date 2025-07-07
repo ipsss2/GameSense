@@ -56,106 +56,52 @@ def save_string_list_to_file(string_list, file_name):
         for item in string_list:
             file.write(item + '\n')
 
-action_o_space = [
-
-    {
-        "action_name": "Move Forward",
-        "key_combination": ["MOVE_FORWARD"],
-        "design_reason": "用于向前移动，是最基础的位移操作之一。适合接近敌人或调整站位。"
-    },
-    {
-        "action_name": "Move Backward",
-        "key_combination": ["MOVE_BACKWARD"],
-        "design_reason": "用于后退，是基础的防守位移操作之一，适合拉开距离或规避攻击。"
-    },
-    {
-        "action_name": "Move Left",
-        "key_combination": ["MOVE_LEFT"],
-        "design_reason": "向左移动，用于调整横向站位或躲避攻击。"
-    },
-    {
-        "action_name": "Move Right",
-        "key_combination": ["MOVE_RIGHT"],
-        "design_reason": "向右移动，用于调整横向站位或躲避攻击。"
-    },
-
-    {
-        "action_name": "Light Attack",
-        "key_combination": ["LIGHT_ATTACK"],
-        "design_reason": "基础攻击动作，适合在敌人无防备时快速输出伤害。"
-    },
-    {
-        "action_name": "Heavy Attack",
-        "key_combination": ["HEAVY_ATTACK"],
-        "design_reason": "重攻击，造成较高伤害但需要蓄力，适合在敌人被控制或暴露破绽时使用。"
-    },
-
-
-    {
-        "action_name": "Dodge",
-        "key_combination": ["DODGE"],
-        "design_reason": "基础的闪避操作，用于躲避敌人的攻击。"
-    },
-
-
-    {
-        "action_name": "Drink Health Potion",
-        "key_combination": ["DRINK_restore_blood_volume"],
-        "design_reason": "使用药剂回复血量，适合在血量过低时使用。"
-    },
-    {
-        "action_name": "Cast Body Fixing",
-        "key_combination": ["Body_Fixing"],
-        "design_reason": "施放定身术，将敌人控制在原地，适合在敌人进行攻击或移动时打断其行动。"
-    }
-
-]
 action_space = [
     {
         "action_name": "Move Forward",
         "key_combination": ["MOVE_FORWARD"],
-        "design_reason": "用于向前移动，是最基础的位移操作之一。适合接近敌人或调整站位。"
+        "design_reason": "Used for forward movement, it is one of the most basic displacement operations. Suitable for approaching enemies or adjusting positions."
     },
     {
         "action_name": "Move Backward",
         "key_combination": ["MOVE_BACKWARD"],
-        "design_reason": "用于后退，是基础的防守位移操作之一，适合拉开距离或规避攻击。"
+        "design_reason": "Used for retreating, it is one of the basic defensive displacement operations, suitable for pulling distance or avoiding attacks."
     },
     {
         "action_name": "Move Left",
         "key_combination": ["MOVE_LEFT"],
-        "design_reason": "向左移动，用于调整横向站位或躲避攻击。"
+        "design_reason": "Move to the left, used to adjust lateral positioning or evade attacks."
     },
     {
         "action_name": "Move Right",
         "key_combination": ["MOVE_RIGHT"],
-        "design_reason": "向右移动，用于调整横向站位或躲避攻击。"
+        "design_reason": "Move to the right, used to adjust lateral positioning or avoid attacks."
     },
     {
         "action_name": "Light Attack",
         "key_combination": ["LIGHT_ATTACK"],
-        "design_reason": "基础攻击动作，适合在敌人无防备时快速输出伤害。"
+        "design_reason": "Basic attack action, suitable for quickly dealing damage when the enemy is unguarded."
     },
     {
         "action_name": "Heavy Attack",
         "key_combination": ["HEAVY_ATTACK"],
-        "design_reason": "重攻击，造成较高伤害但需要蓄力，适合在敌人被控制或暴露破绽时使用。"
+        "design_reason": "Heavy attack, dealing high damage but requiring power, suitable for use when the enemy is controlled or exposed."
     },
     {
         "action_name": "Dodge",
         "key_combination": ["DODGE"],
-        "design_reason": "基础的闪避操作，用于躲避敌人的攻击。"
+        "design_reason": "Basic evasion operations used to avoid enemy attacks."
     },
 
     {
         "action_name": "Drink Health Potion",
         "key_combination": ["DRINK_restore_blood_volume"],
-        "design_reason": "使用药剂回复血量，适合在血量过低时使用。"
+        "design_reason": "Use medication to restore blood volume, suitable for use when blood volume is too low."
     },
     {
         "action_name": "Cast Body Fixing",
         "key_combination": ["Body_Fixing"],
-        "design_reason": "施放定身术，将敌人控制在原地，适合在敌人进行攻击或移动时打断其行动。"
+        "design_reason": "Use the technique of immobilizing to keep the enemy in place, suitable for interrupting their movements when they are attacking or moving."
     }
 ]
 
@@ -164,50 +110,50 @@ action_state_changes = [
 
     {
         "action_name": "Move Forward",
-        "reason": "基础移动操作，不涉及资源消耗或攻击行为。",
+        "reason": "Basic mobile operations that do not involve resource consumption or attack behavior.",
         "idx": 0
 
     },
     {
         "action_name": "Move Backward",
-        "reason": "基础移动操作，不涉及资源消耗或攻击行为。",
+        "reason": "Basic mobile operations that do not involve resource consumption or attack behavior.",
         "idx": 1
     },
     {
         "action_name": "Move Left",
-        "reason": "基础移动操作，不涉及资源消耗或攻击行为。",
+        "reason": "Basic mobile operations that do not involve resource consumption or attack behavior.",
         "idx": 2
     },
     {
         "action_name": "Move Right",
-        "reason": "基础移动操作，不涉及资源消耗或攻击行为。",
+        "reason": "Basic mobile operations that do not involve resource consumption or attack behavior.",
         "idx": 3
     },
 
 
     {
         "action_name": "Light Attack",
-        "reason": "轻攻击会对 Boss 造成伤害，但需要消耗一定体力。",
+        "reason": "Light attacks can cause damage to bosses, but require a certain amount of physical exertion.",
         "idx": 4
     },
     {
         "action_name": "Heavy Attack",
-        "reason": "重攻击需要蓄力，容易被打断，但造成的伤害较高，适合寻找机会施放。",
+        "reason": "Heavy attacks require energy accumulation and are easily interrupted, but they deal high damage and are suitable for seeking opportunities to unleash.",
         "idx": 5
     },
     {
         "action_name": "Dodge",
-        "reason": "闪避用于躲避攻击，成功时避免血量减少，但会消耗体力。",
+        "reason": "Evasion is used to evade attacks and avoid a decrease in health when successful, but it consumes physical energy.",
         "idx": 6
     },
     {
         "action_name": "Drink Health Potion",
-        "reason": "喝药用于回复血量，但会消耗药物存量。适合在血量过低时使用。",
+        "reason": "Drinking medication is used to restore blood volume, but it will consume the stock of medication. Suitable for use when blood volume is too low.",
         "idx": 7
     },
     {
         "action_name": "Cast Body Fixing",
-        "reason": "施放定身术需要法力条，能控制 Boss 一段时间，创造输出机会。",
+        "reason": "To cast a fixed body spell, a mana bar is required, which can control the boss for a period of time and create output opportunities.",
         "idx": 8
     }
 ]
