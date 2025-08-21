@@ -67,7 +67,7 @@ This repository contains the complete codebase for experiments described in the 
   - Implements Double DQN algorithm in `models/new_model.py`
   - Uses ResNet model from `action_manager/model/wukong_trained/`
 - **Training Workflow**:
-  1. Start cheat engine (`fenglingyueying`) for teleportation
+  1. Start cheat engine (`FLiNG Trainer`) for teleportation
   2. Launch game and navigate to boss arena
   3. Run training: `python fight_with_boss.py`
   4. Automatically detects boss health using [bar_detector.py](file://d:\gamesense\GameSense\utils\bar_detector.py)
@@ -92,7 +92,7 @@ top = (screen_height - capture_height) // 2  # Y-coordinate for capture
 ```
 
 ### Cheat Engine Requirements
-For stable boss battle training, use **fenglingyueying** cheat engine:
+For stable boss battle training, use **FLiNG Trainer** cheat engine:
 - **Key Bindings**:
   - `K`: Mark current position
   - `L`: Teleport to marked position
