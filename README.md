@@ -70,11 +70,11 @@ This repository contains the complete codebase for experiments described in the 
   1. Start cheat engine (`FLiNG Trainer`) for teleportation
   2. Launch game and navigate to boss arena
   3. Run training: `python fight_with_boss.py`
-  4. Automatically detects boss health using [bar_detector.py](utils\bar_detector.py)
+  4. Automatically detects boss health using [bar_detector.py](utils/bar_detector.py)
 
 #### 🧩 Integrated Mode
 - **Embedded Usage**: Can be imported into main agent loop for autonomous gameplay
-- **Use Case**: The integration utilizes the Controller class in [New_action_mamager.py](action_manager\New_action_mamager.py#42) to seamlessly launch training scripts from the main agent loop.
+- **Use Case**: The integration utilizes the Controller class in [New_action_mamager.py](action_manager/New_action_mamager.py#42) to seamlessly launch training scripts from the main agent loop.
 
 ---
 
