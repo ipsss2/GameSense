@@ -74,7 +74,7 @@ This repository contains the complete codebase for experiments described in the 
 
 #### 🧩 Integrated Mode
 - **Embedded Usage**: Can be imported into main agent loop for autonomous gameplay
-- **Use Case**: The integration utilizes the Controller class in [New_action_mamager.py](action_manager/New_action_mamager.py#42) to seamlessly launch training scripts from the main agent loop.
+- **Use Case**: The integration utilizes the Controller class in [New_action_mamager.py](action_manager/New_action_mamager.py#42) (in line 42) to seamlessly launch training scripts from the main agent loop.
 
 ---
 
