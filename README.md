@@ -46,7 +46,7 @@ This repository contains the complete codebase for experiments described in the 
 ## 🚀 Key Implementation Details
 
 ### 1. Agent Execution Flow
-- **Main Entry**: [new_agent_with_map&history.py](file://d:\gamesense\GameSense\new_agent_with_map&history.py) implements the complete agent loop:
+- **Main Entry**: [new_agent_with_map&history.py](new_agent_with_map&history.py) implements the complete agent loop:
   ```bash
   python new_agent_with_map&history.py
   ```
@@ -56,7 +56,7 @@ This repository contains the complete codebase for experiments described in the 
 
 
 ### 2. Boss Battle RL Training (Standalone & Integrated)
-- **Training Entry**: [fight_with_boss.py](file://d:\gamesense\GameSense\fight_with_boss.py) offers **dual usage modes**:
+- **Training Entry**: [fight_with_boss.py](fight_with_boss.py) offers **dual usage modes**:
   ```bash
   python fight_with_boss.py  # Standalone RL training mode
   ```
@@ -70,11 +70,11 @@ This repository contains the complete codebase for experiments described in the 
   1. Start cheat engine (`FLiNG Trainer`) for teleportation
   2. Launch game and navigate to boss arena
   3. Run training: `python fight_with_boss.py`
-  4. Automatically detects boss health using [bar_detector.py](file://d:\gamesense\GameSense\utils\bar_detector.py)
+  4. Automatically detects boss health using [bar_detector.py](utils\bar_detector.py)
 
 #### 🧩 Integrated Mode
 - **Embedded Usage**: Can be imported into main agent loop for autonomous gameplay
-- **Use Case**: The integration utilizes the Controller class in [New_action_mamager.py](file://d:\gamesense\GameSense\action_manager\New_action_mamager.py) to seamlessly launch training scripts from the main agent loop.
+- **Use Case**: The integration utilizes the Controller class in [New_action_mamager.py](action_manager\New_action_mamager.py#42) to seamlessly launch training scripts from the main agent loop.
 
 ---
 
