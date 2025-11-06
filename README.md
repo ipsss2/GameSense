@@ -9,7 +9,7 @@ This repository contains the complete codebase for experiments described in the 
 
 ## 📄 Paper Information
 - **Title**: Cultivating Game Sense for Yourself: Making VLMs Gaming Experts
-- **Authors**: wenxuan lu 
+- **Authors**: Wenxuan lu, Jiangyang He, Zhanqiu Zhang, Steven Y. Guo, Tianning Zang
 - **Conference**: ACL 2025  
 - **PDF**: https://aclanthology.org/2025.acl-long.643/  
 
